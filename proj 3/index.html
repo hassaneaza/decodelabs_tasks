@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DecodeLabs - Client Nervous System Matrix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-wrapper">
+        <header class="app-header">
+            <h2>Nervous System Engine <span>V.03</span></h2>
+            <p>Evaluating User Action Stimuli and Generating Dynamic Tree Mutations in Real-Time[cite: 487, 498].</p>
+        </header>
+
+        <div class="main-layout-container">
+            <section class="control-console">
+                <h3>Input Stimuli Module</h3>
+                <div class="underline"></div>
+                
+                <div class="form-group">
+                    <label for="text-input">Target Node Payload:</label>
+                    <input type="text" id="text-input" placeholder="Type a dynamic message string...">
+                </div>
+
+                <div class="form-group">
+                    <label for="color-select">Visual Skin Class Configuration:</label>
+                    <select id="color-select">
+                        <option value="variant-blue">Theme Cyan Matrix</option>
+                        <option value="variant-green">Theme Emerald Matrix</option>
+                        <option value="variant-purple">Theme Purple Matrix</option>
+                    </select>
+                </div>
+
+                <button id="mutation-trigger-btn" class="action-btn js-submit">Execute IPO Loop</button>
+                <button id="reset-trigger-btn" class="action-btn secondary-btn">Clear Mutation Node</button>
+            </section>
+
+            <section class="display-panel">
+                <h3>Active DOM Tree Mutation Monitor</h3>
+                <div class="underline"></div>
+                
+                <div id="output-view-node" class="view-node-container variant-blue">
+                    <p class="placeholder-text">Waiting for user interaction event stream components...</p>
+                </div>
+                
+                <div class="status-ticker">
+                    Status: <span id="ticker-status-label">VIGILANT MONITOR ACTIVE</span>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+/* Interactive System Layout Design Styling [cite: 493] */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Consolas', 'Courier New', monospace;
+}
+
+body {
+    background-color: #0f172a;
+    color: #e2e8f0;
+    padding: 40px 20px;
+}
+
+.app-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.app-header {
+    text-align: center;
+    margin-bottom: 40px;
+    border-bottom: 2px dashed #334155;
+    padding-bottom: 20px;
+}
+
+.app-header h2 {
+    font-size: 1.8rem;
+    color: #f8fafc;
+}
+
+.app-header h2 span {
+    color: #38bdf8;
+}
+
+.app-header p {
+    font-size: 0.9rem;
+    color: #94a3b8;
+    margin-top: 5px;
+}
+
+/* Multi-Panel Interactive Display [cite: 493] */
+.main-layout-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+section {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    padding: 25px;
+}
+
+section h3 {
+    font-size: 1.1rem;
+    color: #f1f5f9;
+}
+
+.underline {
+    width: 40px;
+    height: 3px;
+    background-color: #38bdf8;
+    margin: 8px 0 20px 0;
+}
+
+/* Form Input Element Controls [cite: 493] */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 0.85rem;
+    color: #94a3b8;
+    margin-bottom: 8px;
+}
+
+input[type="text"], select {
+    width: 100%;
+    padding: 12px;
+    background-color: #0f172a;
+    border: 1px solid #475569;
+    border-radius: 4px;
+    color: #f8fafc;
+    font-size: 0.9rem;
+    outline: none;
+}
+
+input[type="text"]:focus, select:focus {
+    border-color: #38bdf8;
+}
+
+/* Event Control Triggers [cite: 493] */
+.action-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #38bdf8;
+    border: none;
+    color: #0f172a;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    transition: background 0.2s;
+}
+
+.action-btn:hover {
+    background-color: #0ea5e9;
+}
+
+.secondary-btn {
+    background-color: transparent;
+    border: 1px solid #475569;
+    color: #94a3b8;
+}
+
+.secondary-btn:hover {
+    background-color: #334155;
+    color: #f8fafc;
+}
+
+/* Target Live View Mutation Container Nodes [cite: 493, 498] */
+.view-node-container {
+    min-height: 180px;
+    background-color: #0f172a;
+    border-radius: 6px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-left: 6px solid #475569;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.placeholder-text {
+    color: #475569;
+    font-style: italic;
+}
+
+.mutated-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.mutated-timestamp {
+    font-size: 0.75rem;
+    color: #64748b;
+}
+
+/* Theme Configuration Selection Mappings [cite: 498] */
+.view-node-container.variant-blue { border-left-color: #38bdf8; background: linear-gradient(to right, #0f172a, #1e3a8a); }
+.view-node-container.variant-green { border-left-color: #4ade80; background: linear-gradient(to right, #0f172a, #064e3b); }
+.view-node-container.variant-purple { border-left-color: #c084fc; background: linear-gradient(to right, #0f172a, #581c87); }
+
+.status-ticker {
+    font-size: 0.8rem;
+    color: #64748b;
+}
+
+#ticker-status-label {
+    color: #4ade80;
+    font-weight: bold;
+}
